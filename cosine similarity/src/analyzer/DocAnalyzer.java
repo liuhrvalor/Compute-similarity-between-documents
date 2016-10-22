@@ -75,7 +75,7 @@ public class DocAnalyzer {
 			tokenizer = new TokenizerME(
 					new TokenizerModel(
 							new FileInputStream(
-									"C:/Users/Ryan/Desktop/information/IR task/IR task/data/Model/en-token.bin")));
+									"./data/Model/en-token.bin")));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -411,7 +411,7 @@ public class DocAnalyzer {
 		
 		//first construct the vector space representations for these five reviews
 		// the our smaples vector, finally get the similarity metric 
-		analyzequery(LoadJson("C:/Users/Ryan/Desktop/information/IR task/IR task/data/test/samples/query.json"));
+		analyzequery(LoadJson("./data/samples/query.json"));
 	
 		
 		HashMap<String, Double> Similarity = new HashMap<String, Double>();
@@ -571,10 +571,10 @@ public class DocAnalyzer {
 		DocAnalyzer analyzer = new DocAnalyzer();
 		
 		//Load stopwords
-		analyzer.LoadStopwords("C:/Users/Ryan/Desktop/information/IR task/IR task/data/english.stop.txt");
+		analyzer.LoadStopwords("./data/Model/english.stop.txt");
         
 		// Load test document json file and make the computation to get the Compute similarity 
-		analyzer.LoadDirectory("C:/Users/Ryan/Desktop/information/IR task/IR task/data/yelp",".json");
+		analyzer.LoadDirectory("./data/test/yelp",".json");
 
 	}
 
