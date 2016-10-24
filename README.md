@@ -7,7 +7,7 @@ Dataset:
          
          2. Yelp json file, incluing reviews from 100 restaurants.
 
-1. test the Zip'law after Tokenization,Stemming, removing Stopwords.
+1. Test the Zip'law after Tokenization,Stemming, removing Stopwords.
 2. Apply Vector Space Model(Specifically, Sub-linear TF scaling) to find the most similar review with the query review.
 
 
