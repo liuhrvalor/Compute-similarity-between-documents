@@ -11,3 +11,6 @@ Dataset:
 2. Apply Vector Space Model(Specifically, Sub-linear TF scaling) to find the most similar review with the query review.
 
 
+See code at  /cosine similarity/src/analyzer/DocAnalyzer.java
+
+
